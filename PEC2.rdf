@@ -9,7 +9,7 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:untitled-ontology-8="http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#">
-    <owl:Ontology rdf:about="https://github.com/blacknole/RC_PEC2/blob/main/PEC2.rdf"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8"/>
     
 
 
