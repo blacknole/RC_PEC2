@@ -1,0 +1,39 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "untitled-ontology-8:Destination" "untitled-ontology-8:TypeOfTraveller" "untitled-ontology-8:Author" "untitled-ontology-8:Review" "untitled-ontology-8:SeatType" "untitled-ontology-8:Flight" "untitled-ontology-8:Origin" "untitled-ontology-8:Aircraft" "untitled-ontology-8:Country" "untitled-ontology-8:Places" ; /*classes style*/
+	"NULL" -> "untitled-ontology-8:Author" [ label = "owl:onClass" ];
+	"NULL" -> "untitled-ontology-8:hasAuthor" [ label = "owl:onProperty" ];
+	"NULL" -> "untitled-ontology-8:Origin" [ label = "owl:onClass" ];
+	"NULL" -> "untitled-ontology-8:hasOrigin" [ label = "owl:onProperty" ];
+	"NULL" -> "untitled-ontology-8:Destination" [ label = "owl:onClass" ];
+	"NULL" -> "untitled-ontology-8:hasDestination" [ label = "owl:onProperty" ];
+	"untitled-ontology-8:Flight0" -> "untitled-ontology-8:Faro" [ label = "untitled-ontology-8:hasOrigin" ];
+	"untitled-ontology-8:Flight0" -> "untitled-ontology-8:Luton" [ label = "untitled-ontology-8:hasDestination" ];
+	"untitled-ontology-8:review0" -> "untitled-ontology-8:EconomyClass" [ label = "untitled-ontology-8:hasSeatType" ];
+	"untitled-ontology-8:review0" -> "untitled-ontology-8:UnitedKingdom" [ label = "untitled-ontology-8:hasPassengerCountry" ];
+	"untitled-ontology-8:review0" -> "untitled-ontology-8:David" [ label = "untitled-ontology-8:hasAuthor" ];
+	"untitled-ontology-8:Review" -> "xsd:string" [ label = "untitled-ontology-8:hasTitle" ];
+	"untitled-ontology-8:Review" -> "untitled-ontology-8:SeatType" [ label = "untitled-ontology-8:hasSeatType" ];
+	"untitled-ontology-8:Review" -> "xsd:positiveInteger" [ label = "untitled-ontology-8:seatComfortRating" ];
+	"untitled-ontology-8:Review" -> "untitled-ontology-8:Author" [ label = "untitled-ontology-8:hasAuthor" ];
+	"untitled-ontology-8:Review" -> "xsd:string" [ label = "untitled-ontology-8:hasBody" ];
+	"untitled-ontology-8:Review" -> "untitled-ontology-8:Country" [ label = "untitled-ontology-8:hasPassengerCountry" ];
+	"untitled-ontology-8:Review" -> "xsd:positiveInteger" [ label = "untitled-ontology-8:valueForMoney" ];
+	"untitled-ontology-8:Flight" -> "untitled-ontology-8:Aircraft" [ label = "untitled-ontology-8:hasAircraft" ];
+	"untitled-ontology-8:Review" -> "xsd:boolean" [ label = "untitled-ontology-8:verified" ];
+	"untitled-ontology-8:Flight" -> "untitled-ontology-8:Places" [ label = "untitled-ontology-8:hasOrigin" ];
+	"untitled-ontology-8:Flight" -> "untitled-ontology-8:Places" [ label = "untitled-ontology-8:hasDestination" ];
+	"untitled-ontology-8:Review" -> "untitled-ontology-8:TypeOfTraveller" [ label = "untitled-ontology-8:hasTypeOfTraveller" ];
+	"untitled-ontology-8:Review" -> "xsd:positiveInteger" [ label = "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#wifi&ConnectivityRating" ];
+	"untitled-ontology-8:Review" -> "xsd:boolean" [ label = "untitled-ontology-8:recommended" ];
+	"untitled-ontology-8:Review" -> "xsd:dateTime" [ label = "untitled-ontology-8:hasDatePublished" ];
+	"untitled-ontology-8:Review" -> "xsd:positiveInteger" [ label = "untitled-ontology-8:ratingValue" ];
+	"untitled-ontology-8:Review" -> "untitled-ontology-8:Flight" [ label = "untitled-ontology-8:hasFlight" ];
+	"untitled-ontology-8:Flight" -> "xsd:dateTime" [ label = "untitled-ontology-8:hasDateFlown" ];
+	"untitled-ontology-8:Review" -> "xsd:positiveInteger" [ label = "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#food&BeveragesRating" ];
+	"untitled-ontology-8:Review" -> "xsd:positiveInteger" [ label = "untitled-ontology-8:inflightEntertainmentRating" ];
+	"untitled-ontology-8:Review" -> "xsd:positiveInteger" [ label = "untitled-ontology-8:cabinStaffServiceRating" ];
+	"untitled-ontology-8:Review" -> "xsd:positiveInteger" [ label = "untitled-ontology-8:groundServiceRating" ];
+
+}
