@@ -1,0 +1,461 @@
+@prefix : <https://github.com/blacknole/RC_PEC2/blob/main/PEC2.rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://github.com/blacknole/RC_PEC2/blob/main/PEC2.rdf#> .
+
+<https://github.com/blacknole/RC_PEC2/blob/main/PEC2.rdf> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAircraft
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAircraft> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> ;
+                                                                                     rdfs:range <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Aircraft> ;
+                                                                                     rdfs:comment "Connects the flight to its aircaft" ;
+                                                                                     rdfs:label "hasAircraft" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAuthor
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAuthor> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                   rdfs:range <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author> ;
+                                                                                   rdfs:comment "Connects the Review to its Author" ;
+                                                                                   rdfs:label "hasAuthor" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDestination
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDestination> rdf:type owl:ObjectProperty ;
+                                                                                        rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> ;
+                                                                                        rdfs:range <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places> ;
+                                                                                        rdfs:comment "Connects the flight to its Destination" ;
+                                                                                        rdfs:label "hasDestination" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasFlight
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasFlight> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                   rdfs:range <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> ;
+                                                                                   rdfs:comment "Connects the Review to its Flight" ;
+                                                                                   rdfs:label "hasFlight" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasOrigin
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasOrigin> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> ;
+                                                                                   rdfs:range <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places> ;
+                                                                                   rdfs:comment "Connects the Flight to its Origin" ;
+                                                                                   rdfs:label "hasOrigin" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasPassengerCountry
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasPassengerCountry> rdf:type owl:ObjectProperty ;
+                                                                                             rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                             rdfs:range <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country> ;
+                                                                                             rdfs:comment "Connects the Review to its Passenger Country" ;
+                                                                                             rdfs:label "hasPassengerCountry" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasSeatType
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasSeatType> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                     rdfs:range <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#SeatType> ;
+                                                                                     rdfs:comment "Connects the Review to its Seat Type" ;
+                                                                                     rdfs:label "hasSeatType" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTypeOfTraveller
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTypeOfTraveller> rdf:type owl:ObjectProperty ;
+                                                                                            rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                            rdfs:range <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#TypeOfTraveller> ;
+                                                                                            rdfs:comment "Connects the flight to its Type Of Traveller" ;
+                                                                                            rdfs:label "hasTypeOfTraveller" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#cabinStaffServiceRating
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#cabinStaffServiceRating> rdf:type owl:DatatypeProperty ;
+                                                                                                 rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                                 rdfs:range xsd:positiveInteger ;
+                                                                                                 rdfs:comment "the Cabin Staff Service Rating" ;
+                                                                                                 rdfs:label "cabinStaffServiceRating" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#groundServiceRating
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#groundServiceRating> rdf:type owl:DatatypeProperty ;
+                                                                                             rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                             rdfs:range xsd:positiveInteger ;
+                                                                                             rdfs:comment "the Ground Service Rating" ;
+                                                                                             rdfs:label "groundServiceRating" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasBody
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasBody> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                 rdfs:range xsd:string ;
+                                                                                 rdfs:comment "The body of the comment" ;
+                                                                                 rdfs:label "hasBody" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDateFlown
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDateFlown> rdf:type owl:DatatypeProperty ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> ;
+                                                                                      rdfs:range xsd:dateTime ;
+                                                                                      rdfs:comment "the Date of the Flight" ;
+                                                                                      rdfs:label "hasDateFlown" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDatePublished
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDatePublished> rdf:type owl:DatatypeProperty ;
+                                                                                          rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                          rdfs:range xsd:dateTime ;
+                                                                                          rdfs:comment "The date of publication of the Review" ;
+                                                                                          rdfs:label "hasDatePublished" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTitle
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTitle> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                  rdfs:range xsd:string ;
+                                                                                  rdfs:comment "The Title of the comment" ;
+                                                                                  rdfs:label "hasTittle" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#inflightEntertainmentRating
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#inflightEntertainmentRating> rdf:type owl:DatatypeProperty ;
+                                                                                                     rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                                     rdfs:range xsd:positiveInteger ;
+                                                                                                     rdfs:comment "the Inflight Entertainment Rating" ;
+                                                                                                     rdfs:label "inflightEntertainmentRating" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ratingValue
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ratingValue> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                     rdfs:range xsd:positiveInteger ;
+                                                                                     rdfs:comment "The value of the rating" ;
+                                                                                     rdfs:label "ratingValue" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#recommended
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#recommended> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                     rdfs:range xsd:boolean ;
+                                                                                     rdfs:comment "Whether or not they recommended the flight overall" ;
+                                                                                     rdfs:label "recommended" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#seatComfortRating
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#seatComfortRating> rdf:type owl:DatatypeProperty ;
+                                                                                           rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                           rdfs:range xsd:positiveInteger ;
+                                                                                           rdfs:comment "The seatComfort Rating" ;
+                                                                                           rdfs:label "seatComfortRating" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#valueForMoney
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#valueForMoney> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                       rdfs:range xsd:positiveInteger ;
+                                                                                       rdfs:comment "The Value For Money" ;
+                                                                                       rdfs:label "valueForMoney" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#verified
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#verified> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                  rdfs:range xsd:boolean ;
+                                                                                  rdfs:comment "Whether a Review is verified or not" ;
+                                                                                  rdfs:label "verified" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#food&BeveragesRating
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#food&BeveragesRating> rdf:type owl:DatatypeProperty ;
+                                                                                              rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                              rdfs:range xsd:positiveInteger ;
+                                                                                              rdfs:comment "the Food & Beverages Rating" ;
+                                                                                              rdfs:label "food&BeveragesRating" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#wifi&ConnectivityRating
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#wifi&ConnectivityRating> rdf:type owl:DatatypeProperty ;
+                                                                                                 rdfs:domain <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                                 rdfs:range xsd:positiveInteger ;
+                                                                                                 rdfs:comment "The Wifi & Connectivity Rating" ;
+                                                                                                 rdfs:label "wifi&ConnectivityRating" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Aircraft
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Aircraft> rdf:type owl:Class ;
+                                                                                  rdfs:comment "Type or model of the aircraft" ;
+                                                                                  rdfs:label "Aircraft" ;
+                                                                                  rdfs:sameAs "https://dbpedia.org/ontology/Aircraft" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author> rdf:type owl:Class ;
+                                                                                rdfs:comment "Author of the review" ;
+                                                                                rdfs:label "Author" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places> ;
+                                                                              rdfs:comment "The city of origin or destination" ;
+                                                                              rdfs:label "City" ;
+                                                                              rdfs:sameAs "http://dbpedia.org/ontology/city" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places> ;
+                                                                                 rdfs:comment "A country on the planet, probably a passenger Country" ;
+                                                                                 rdfs:label "Country" ;
+                                                                                 rdfs:sameAs "http://dbpedia.org/ontology/country" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Destination
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Destination> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places> ;
+                                                                                     rdfs:comment "Destination of the flight" ;
+                                                                                     rdfs:label "Destination" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDestination> ;
+                                                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onClass <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Destination>
+                                                                                                ] ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasOrigin> ;
+                                                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onClass <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Origin>
+                                                                                                ] ;
+                                                                                rdfs:comment "The flight with its Origin, Destination and date" ;
+                                                                                rdfs:label "Flight" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighRatingReview
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighRatingReview> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Rating> ;
+                                                                                          rdfs:comment "A Review with 5 or more Rating" ;
+                                                                                          rdfs:label "High Rating Review" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighValueForMoney
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighValueForMoney> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ValueForMoney> ;
+                                                                                           rdfs:comment "The rating of the value for money of the flight overall is 4 or 5" ;
+                                                                                           rdfs:label "High Value For Money" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowRatingReview
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowRatingReview> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Rating> ;
+                                                                                         rdfs:comment "A Review with 4 or less rating" ;
+                                                                                         rdfs:label "Low Rating Review" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowValueforMoney
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowValueforMoney> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ValueForMoney> ;
+                                                                                          rdfs:comment "The rating of the value for money of the flight overall is 3 or less" ;
+                                                                                          rdfs:label "Low Value for Money" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NegativeReview
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NegativeReview> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#OverallResult> ;
+                                                                                        rdfs:comment "A review that in general is negative" ;
+                                                                                        rdfs:label "Negative review" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotRecommendedReview
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotRecommendedReview> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Recommended> ;
+                                                                                              rdfs:comment "A review that has not recommended the experience" ;
+                                                                                              rdfs:label "Not Recommended Review" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotVerifiedReview
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotVerifiedReview> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Verified> ;
+                                                                                           rdfs:comment "A refiew that has not been verified" ;
+                                                                                           rdfs:label "Not Verified Review" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Origin
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Origin> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places> ;
+                                                                                rdfs:comment "Origin of the flight" ;
+                                                                                rdfs:label "Origin" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#OverallResult
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#OverallResult> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                       rdfs:comment "If in general a Review is positive or negative" ;
+                                                                                       rdfs:label "Overall Result" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places> rdf:type owl:Class ;
+                                                                                rdfs:comment "The diferent types of places like Country or City and if there are a Destination or Origin for a flight" ;
+                                                                                rdfs:label "Places" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#PositiveReview
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#PositiveReview> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#OverallResult> ;
+                                                                                        rdfs:comment "A review that in general is positive" ;
+                                                                                        rdfs:label "Positive Review" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Rating
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Rating> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                rdfs:comment "Categorize if a Review is High or Low rating" ;
+                                                                                rdfs:label "Rating" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Recommended
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Recommended> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                     rdfs:comment "Categorize if a Review recommends the experience or not" ;
+                                                                                     rdfs:label "Recommended" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#RecommendedReview
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#RecommendedReview> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Recommended> ;
+                                                                                           rdfs:comment "A review that has recommended the experience" ;
+                                                                                           rdfs:label "Recommended Review" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAuthor> ;
+                                                                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onClass <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author>
+                                                                                                ] ;
+                                                                                rdfs:comment "The overall reviews" ;
+                                                                                rdfs:label "Review" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#SeatType
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#SeatType> rdf:type owl:Class ;
+                                                                                  rdfs:comment "The type of seat. Ex.: Business, economy..." ;
+                                                                                  rdfs:label "Seat Type" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#TypeOfTraveller
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#TypeOfTraveller> rdf:type owl:Class ;
+                                                                                         rdfs:comment "Type of traveller. Ex.: Business, solo, family..." ;
+                                                                                         rdfs:label "Type Of Traveller" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ValueForMoney
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ValueForMoney> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Verified
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Verified> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                  rdfs:comment "Categorize if a Review is Verified" ;
+                                                                                  rdfs:label "Verified" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#VerifiedReview
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#VerifiedReview> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Verified> ;
+                                                                                        rdfs:comment "A refiew that has been verified" ;
+                                                                                        rdfs:label "Verified Review" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#David
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#David> rdf:type owl:NamedIndividual ,
+                                                                                        <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author> ;
+                                                                               rdfs:comment "A passenger that writes the review0" ;
+                                                                               rdfs:label "David" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#EconomyClass
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#EconomyClass> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#SeatType> ;
+                                                                                      rdfs:comment "The seat type EconomyClass" ;
+                                                                                      rdfs:label "EconomyClass" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Faro
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Faro> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City> ;
+                                                                              rdfs:comment "A city" ;
+                                                                              rdfs:label "Faro" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight0
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight0> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> ;
+                                                                                 <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDestination> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Luton> ;
+                                                                                 <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasOrigin> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Faro> ;
+                                                                                 rdfs:comment "The Flight of David" ;
+                                                                                 rdfs:label "Flight0" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Luton
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Luton> rdf:type owl:NamedIndividual ,
+                                                                                        <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City> ;
+                                                                               rdfs:comment "A city" ;
+                                                                               rdfs:label "Luton" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#UnitedKingdom
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#UnitedKingdom> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country> ;
+                                                                                       rdfs:comment "a country" ;
+                                                                                       rdfs:label "United Kingdom" .
+
+
+###  http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#review0
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#review0> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> ;
+                                                                                 <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAuthor> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#David> ;
+                                                                                 <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasPassengerCountry> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#UnitedKingdom> ;
+                                                                                 <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasSeatType> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#EconomyClass> ;
+                                                                                 <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ratingValue> 7 ;
+                                                                                 <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#recommended> "true"^^xsd:boolean ;
+                                                                                 <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#seatComfortRating> 2 ;
+                                                                                 <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#valueForMoney> 3 ;
+                                                                                 <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#verified> "true"^^xsd:boolean ;
+                                                                                 rdfs:comment "the review David write" ;
+                                                                                 rdfs:label "review0" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
