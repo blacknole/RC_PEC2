@@ -1,0 +1,798 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDestination"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasOrigin"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAuthor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Aircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Type or model of the aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/ontology/Aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Author of the review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Author"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The city of origin or destination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "http://dbpedia.org/ontology/city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A country on the planet, probably a passenger Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "http://dbpedia.org/ontology/country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#David",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A passenger that writes the review0"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "David"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#EconomyClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#SeatType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The seat type EconomyClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EconomyClass"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Faro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Faro"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The flight with its Origin, Destination and date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Aircraft"
+    }, {
+      "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDestination" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Luton"
+  } ],
+  "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasOrigin" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Faro"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Flight of David"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Flight0"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighRatingReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Review with 5 or more Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HighRatingReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighValueForMoney",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The rating of the value for money of the flight overall is 4 or 5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HighValueForMoney"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ValueForMoney"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowRatingReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Review with 4 or less rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LowRatingReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowValueforMoney",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The rating of the value for money of the flight overall is 3 or less"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LowValueforMoney"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ValueForMoney"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Luton",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Luton"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NegativeReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A review that in general is negative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Negativereview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#OverallResult"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotRecommendedReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A review that has not recommended the experience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NotRecommendedReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Recommended"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotVerifiedReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A refiew that has not been verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NotVerifiedReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Verified"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#OverallResult",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "If in general a Review is positive or negative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OverallResult"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The diferent types of places like Country or City and if there are a Destination or Origin for a flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Places"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#PositiveReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A review that in general is positive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PositiveReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#OverallResult"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Categorize if a Review is High or Low rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Recommended",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Categorize if a Review recommends the experience or not"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Recommended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#RecommendedReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A review that has recommended the experience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RecommendedReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Recommended"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The overall reviews"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author"
+    }, {
+      "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country"
+    }, {
+      "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight"
+    }, {
+      "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#SeatType"
+    }, {
+      "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#TypeOfTraveller"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#SeatType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The type of seat. Ex.: Business, economy..."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SeatType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#TypeOfTraveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Type of traveller. Ex.: Business, solo, family..."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TypeOfTraveller"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#UnitedKingdom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UnitedKingdom"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ValueForMoney",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Categorize if a Review is has a High or Low value for money"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ValueForMoney"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Verified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Categorize if a Review is Verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#VerifiedReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A refiew that has been verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "VerifiedReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Verified"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#cabinStaffServiceRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the Cabin Staff Service Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cabinStaffServiceRating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#food&BeveragesRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the Food & Beverages Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "food&BeveragesRating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#groundServiceRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the Ground Service Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "groundServiceRating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Connects the flight to its aircaft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasAircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAuthor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Connects the Review to its Author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasAuthor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The body of the comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasBody"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDateFlown",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the Date of the Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasDateFlown"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDatePublished",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The date of publication of the Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasDatePublished"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDestination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Connects the flight to its Destination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasDestination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Connects the Review to its Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasFlight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Connects the Flight to its Origin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasOrigin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasPassengerCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Connects the Review to its Passenger Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasPassengerCountry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasSeatType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Connects the Review to its Seat Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasSeatType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#SeatType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Title of the comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasTittle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTypeOfTraveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Connects the flight to its Type Of Traveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasTypeOfTraveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#TypeOfTraveller"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#inflightEntertainmentRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the Inflight Entertainment Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "inflightEntertainmentRating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ratingValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The value of the rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ratingValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#recommended",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Whether or not they recommended the flight overall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "recommended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#review0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAuthor" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#David"
+  } ],
+  "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasFlight" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight0"
+  } ],
+  "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasPassengerCountry" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#UnitedKingdom"
+  } ],
+  "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasSeatType" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#EconomyClass"
+  } ],
+  "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ratingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "7"
+  } ],
+  "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#recommended" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#valueForMoney" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#verified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the review David write"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "review0"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#seatComfortRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The seatComfort Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "seatComfortRating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#valueForMoney",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Value For Money"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "valueForMoney"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#verified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Whether a Review is verified or not"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#wifi&ConnectivityRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Wifi & Connectivity Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "wifi&ConnectivityRating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
