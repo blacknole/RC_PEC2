@@ -1,0 +1,442 @@
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAircraft
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAircraft> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAircraft> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Aircraft> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects the flight to its aircaft" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "hasAircraft" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAuthor
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects the Review to its Author" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "hasAuthor" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDestination
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDestination> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDestination> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDestination> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects the flight to its Destination" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDestination> <http://www.w3.org/2000/01/rdf-schema#label> "hasDestination" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasFlight
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasFlight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasFlight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects the Review to its Flight" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasFlight> <http://www.w3.org/2000/01/rdf-schema#label> "hasFlight" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasOrigin
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects the Flight to its Origin" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "hasOrigin" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasPassengerCountry
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasPassengerCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasPassengerCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasPassengerCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasPassengerCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasPassengerCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects the Review to its Passenger Country" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasPassengerCountry> <http://www.w3.org/2000/01/rdf-schema#label> "hasPassengerCountry" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasSeatType
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasSeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasSeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasSeatType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasSeatType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#SeatType> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasSeatType> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects the Review to its Seat Type" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasSeatType> <http://www.w3.org/2000/01/rdf-schema#label> "hasSeatType" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTypeOfTraveller
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTypeOfTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTypeOfTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#TypeOfTraveller> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects the flight to its Type Of Traveller" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#label> "hasTypeOfTraveller" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#cabinStaffServiceRating
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#cabinStaffServiceRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#cabinStaffServiceRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#cabinStaffServiceRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#cabinStaffServiceRating> <http://www.w3.org/2000/01/rdf-schema#comment> "the Cabin Staff Service Rating" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#cabinStaffServiceRating> <http://www.w3.org/2000/01/rdf-schema#label> "cabinStaffServiceRating" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#groundServiceRating
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#groundServiceRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#groundServiceRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#groundServiceRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#groundServiceRating> <http://www.w3.org/2000/01/rdf-schema#comment> "the Ground Service Rating" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#groundServiceRating> <http://www.w3.org/2000/01/rdf-schema#label> "groundServiceRating" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasBody
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasBody> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasBody> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasBody> <http://www.w3.org/2000/01/rdf-schema#comment> "The body of the comment" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasBody> <http://www.w3.org/2000/01/rdf-schema#label> "hasBody" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDateFlown
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDateFlown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDateFlown> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDateFlown> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDateFlown> <http://www.w3.org/2000/01/rdf-schema#comment> "the Date of the Flight" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDateFlown> <http://www.w3.org/2000/01/rdf-schema#label> "hasDateFlown" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDatePublished
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDatePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDatePublished> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDatePublished> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDatePublished> <http://www.w3.org/2000/01/rdf-schema#comment> "The date of publication of the Review" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDatePublished> <http://www.w3.org/2000/01/rdf-schema#label> "hasDatePublished" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTitle
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "The Title of the comment" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTitle> <http://www.w3.org/2000/01/rdf-schema#label> "hasTittle" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#inflightEntertainmentRating
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#inflightEntertainmentRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#inflightEntertainmentRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#inflightEntertainmentRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#inflightEntertainmentRating> <http://www.w3.org/2000/01/rdf-schema#comment> "the Inflight Entertainment Rating" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#inflightEntertainmentRating> <http://www.w3.org/2000/01/rdf-schema#label> "inflightEntertainmentRating" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ratingValue
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ratingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ratingValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ratingValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ratingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The value of the rating" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ratingValue> <http://www.w3.org/2000/01/rdf-schema#label> "ratingValue" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#recommended
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#recommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#recommended> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#recommended> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#recommended> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether or not they recommended the flight overall" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#recommended> <http://www.w3.org/2000/01/rdf-schema#label> "recommended" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#seatComfortRating
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#seatComfortRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#seatComfortRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#seatComfortRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#seatComfortRating> <http://www.w3.org/2000/01/rdf-schema#comment> "The seatComfort Rating" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#seatComfortRating> <http://www.w3.org/2000/01/rdf-schema#label> "seatComfortRating" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#valueForMoney
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#valueForMoney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#valueForMoney> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#valueForMoney> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#valueForMoney> <http://www.w3.org/2000/01/rdf-schema#comment> "The Value For Money" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#valueForMoney> <http://www.w3.org/2000/01/rdf-schema#label> "valueForMoney" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#verified
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#verified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#verified> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#verified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#verified> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether a Review is verified or not" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#verified> <http://www.w3.org/2000/01/rdf-schema#label> "verified" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#food&BeveragesRating
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#food&BeveragesRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#food&BeveragesRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#food&BeveragesRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#food&BeveragesRating> <http://www.w3.org/2000/01/rdf-schema#comment> "the Food & Beverages Rating" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#food&BeveragesRating> <http://www.w3.org/2000/01/rdf-schema#label> "food&BeveragesRating" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#wifi&ConnectivityRating
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#wifi&ConnectivityRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#wifi&ConnectivityRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#wifi&ConnectivityRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#wifi&ConnectivityRating> <http://www.w3.org/2000/01/rdf-schema#comment> "The Wifi & Connectivity Rating" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#wifi&ConnectivityRating> <http://www.w3.org/2000/01/rdf-schema#label> "wifi&ConnectivityRating" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Aircraft
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "Type or model of the aircraft" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Aircraft> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Aircraft" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author> <http://www.w3.org/2000/01/rdf-schema#comment> "Author of the review" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author> <http://www.w3.org/2000/01/rdf-schema#label> "Author" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City> <http://www.w3.org/2000/01/rdf-schema#comment> "The city of origin or destination" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/ontology/city" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "A country on the planet, probably a passenger Country" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/ontology/country" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDestination> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasOrigin> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Aircraft> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> <http://www.w3.org/2000/01/rdf-schema#comment> "The flight with its Origin, Destination and date" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> <http://www.w3.org/2000/01/rdf-schema#label> "Flight" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighRatingReview
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighRatingReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighRatingReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Rating> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighRatingReview> <http://www.w3.org/2000/01/rdf-schema#comment> "A Review with 5 or more Rating" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighRatingReview> <http://www.w3.org/2000/01/rdf-schema#label> "HighRatingReview" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighValueForMoney
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighValueForMoney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighValueForMoney> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ValueForMoney> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighValueForMoney> <http://www.w3.org/2000/01/rdf-schema#comment> "The rating of the value for money of the flight overall is 4 or 5" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighValueForMoney> <http://www.w3.org/2000/01/rdf-schema#label> "HighValueForMoney" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowRatingReview
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowRatingReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowRatingReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Rating> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowRatingReview> <http://www.w3.org/2000/01/rdf-schema#comment> "A Review with 4 or less rating" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowRatingReview> <http://www.w3.org/2000/01/rdf-schema#label> "LowRatingReview" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowValueforMoney
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowValueforMoney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowValueforMoney> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ValueForMoney> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowValueforMoney> <http://www.w3.org/2000/01/rdf-schema#comment> "The rating of the value for money of the flight overall is 3 or less" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowValueforMoney> <http://www.w3.org/2000/01/rdf-schema#label> "LowValueforMoney" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NegativeReview
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NegativeReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NegativeReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#OverallResult> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NegativeReview> <http://www.w3.org/2000/01/rdf-schema#comment> "A review that in general is negative" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NegativeReview> <http://www.w3.org/2000/01/rdf-schema#label> "Negativereview" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotRecommendedReview
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotRecommendedReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotRecommendedReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Recommended> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotRecommendedReview> <http://www.w3.org/2000/01/rdf-schema#comment> "A review that has not recommended the experience" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotRecommendedReview> <http://www.w3.org/2000/01/rdf-schema#label> "NotRecommendedReview" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotVerifiedReview
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotVerifiedReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotVerifiedReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Verified> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotVerifiedReview> <http://www.w3.org/2000/01/rdf-schema#comment> "A refiew that has not been verified" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotVerifiedReview> <http://www.w3.org/2000/01/rdf-schema#label> "NotVerifiedReview" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#OverallResult
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#OverallResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#OverallResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#OverallResult> <http://www.w3.org/2000/01/rdf-schema#comment> "If in general a Review is positive or negative" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#OverallResult> <http://www.w3.org/2000/01/rdf-schema#label> "OverallResult" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places> <http://www.w3.org/2000/01/rdf-schema#comment> "The diferent types of places like Country or City and if there are a Destination or Origin for a flight" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places> <http://www.w3.org/2000/01/rdf-schema#label> "Places" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#PositiveReview
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#PositiveReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#PositiveReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#OverallResult> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#PositiveReview> <http://www.w3.org/2000/01/rdf-schema#comment> "A review that in general is positive" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#PositiveReview> <http://www.w3.org/2000/01/rdf-schema#label> "PositiveReview" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Rating
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Categorize if a Review is High or Low rating" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Rating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Recommended
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Recommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Recommended> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Recommended> <http://www.w3.org/2000/01/rdf-schema#comment> "Categorize if a Review recommends the experience or not" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Recommended> <http://www.w3.org/2000/01/rdf-schema#label> "Recommended" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#RecommendedReview
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#RecommendedReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#RecommendedReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Recommended> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#RecommendedReview> <http://www.w3.org/2000/01/rdf-schema#comment> "A review that has recommended the experience" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#RecommendedReview> <http://www.w3.org/2000/01/rdf-schema#label> "RecommendedReview" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author> .
+_:genid5 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAuthor> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#TypeOfTraveller> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#SeatType> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> <http://www.w3.org/2000/01/rdf-schema#comment> "The overall reviews" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> <http://www.w3.org/2000/01/rdf-schema#label> "Review" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#SeatType
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#SeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#SeatType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of seat. Ex.: Business, economy..." .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#SeatType> <http://www.w3.org/2000/01/rdf-schema#label> "SeatType" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#TypeOfTraveller
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#TypeOfTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#TypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of traveller. Ex.: Business, solo, family..." .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#TypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#label> "TypeOfTraveller" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ValueForMoney
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ValueForMoney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ValueForMoney> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ValueForMoney> <http://www.w3.org/2000/01/rdf-schema#comment> "Categorize if a Review is has a High or Low value for money" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ValueForMoney> <http://www.w3.org/2000/01/rdf-schema#label> "ValueForMoney" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Verified
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Verified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Verified> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Verified> <http://www.w3.org/2000/01/rdf-schema#comment> "Categorize if a Review is Verified" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Verified> <http://www.w3.org/2000/01/rdf-schema#label> "Verified" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#VerifiedReview
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#VerifiedReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#VerifiedReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Verified> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#VerifiedReview> <http://www.w3.org/2000/01/rdf-schema#comment> "A refiew that has been verified" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#VerifiedReview> <http://www.w3.org/2000/01/rdf-schema#label> "VerifiedReview" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#David
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#David> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#David> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#David> <http://www.w3.org/2000/01/rdf-schema#comment> "A passenger that writes the review0" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#David> <http://www.w3.org/2000/01/rdf-schema#label> "David" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#EconomyClass
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#EconomyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#EconomyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#SeatType> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#EconomyClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The seat type EconomyClass" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#EconomyClass> <http://www.w3.org/2000/01/rdf-schema#label> "EconomyClass" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Faro
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Faro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Faro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Faro> <http://www.w3.org/2000/01/rdf-schema#comment> "A city" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Faro> <http://www.w3.org/2000/01/rdf-schema#label> "Faro" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight0
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight0> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDestination> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Luton> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight0> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasOrigin> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Faro> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight0> <http://www.w3.org/2000/01/rdf-schema#comment> "The Flight of David" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight0> <http://www.w3.org/2000/01/rdf-schema#label> "Flight0" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Luton
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Luton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Luton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Luton> <http://www.w3.org/2000/01/rdf-schema#comment> "A city" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Luton> <http://www.w3.org/2000/01/rdf-schema#label> "Luton" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#UnitedKingdom
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#UnitedKingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#UnitedKingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#UnitedKingdom> <http://www.w3.org/2000/01/rdf-schema#comment> "a country" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#UnitedKingdom> <http://www.w3.org/2000/01/rdf-schema#label> "UnitedKingdom" .
+# 
+# http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#review0
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#review0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#review0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#review0> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAuthor> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#David> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#review0> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasFlight> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight0> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#review0> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasPassengerCountry> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#UnitedKingdom> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#review0> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasSeatType> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#EconomyClass> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#review0> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ratingValue> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#review0> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#recommended> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#review0> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#valueForMoney> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#review0> <http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#verified> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#review0> <http://www.w3.org/2000/01/rdf-schema#comment> "the review David write" .
+<http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#review0> <http://www.w3.org/2000/01/rdf-schema#label> "review0" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

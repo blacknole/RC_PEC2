@@ -1,0 +1,23 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Review" "base:OverallResult" "base:Recommended" "base:Verified" "base:NotVerifiedReview" "base:VerifiedReview" "base:Rating" "base:PositiveReview" "base:HighRatingReview" "base:ValueForMoney" "base:RecommendedReview" "base:NotRecommendedReview" "base:LowValueforMoney" "base:Country" "base:Places" "base:LowRatingReview" "base:NegativeReview" "base:HighValueForMoney" "base:City" ; /*classes style*/
+	"base:LowRatingReview" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:Recommended" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:NotRecommendedReview" -> "base:Recommended" [ label = "rdfs:subClassOf" ];
+	"base:OverallResult" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:NegativeReview" -> "base:OverallResult" [ label = "rdfs:subClassOf" ];
+	"base:PositiveReview" -> "base:OverallResult" [ label = "rdfs:subClassOf" ];
+	"base:Rating" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:LowValueforMoney" -> "base:ValueForMoney" [ label = "rdfs:subClassOf" ];
+	"base:HighValueForMoney" -> "base:ValueForMoney" [ label = "rdfs:subClassOf" ];
+	"base:HighRatingReview" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:NotVerifiedReview" -> "base:Verified" [ label = "rdfs:subClassOf" ];
+	"base:Verified" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:RecommendedReview" -> "base:Recommended" [ label = "rdfs:subClassOf" ];
+	"base:VerifiedReview" -> "base:Verified" [ label = "rdfs:subClassOf" ];
+	"base:City" -> "base:Places" [ label = "rdfs:subClassOf" ];
+	"base:Country" -> "base:Places" [ label = "rdfs:subClassOf" ];
+	"base:ValueForMoney" -> "base:Review" [ label = "rdfs:subClassOf" ];
+
+}

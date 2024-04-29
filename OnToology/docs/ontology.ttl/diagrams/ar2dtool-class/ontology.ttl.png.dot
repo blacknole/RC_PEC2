@@ -1,0 +1,54 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:TypeOfTraveller" "base:Author" "base:Review" "base:SeatType" "base:Flight" "base:Aircraft" "base:Country" "base:Places" "base:City" ; /*classes style*/
+	"NULL" -> "-1915747d:18f2a622422:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "base:Author" [ label = "rdf:first" ];
+	"NULL" -> "base:Flight" [ label = "rdf:first" ];
+	"NULL" -> "-1915747d:18f2a622422:-7ffb" [ label = "rdf:rest" ];
+	"NULL" -> "base:City" [ label = "rdf:first" ];
+	"NULL" -> "base:hasOrigin" [ label = "owl:onProperty" ];
+	"NULL" -> "base:SeatType" [ label = "rdf:first" ];
+	"NULL" -> "base:Country" [ label = "rdf:first" ];
+	"NULL" -> "base:hasDestination" [ label = "owl:onProperty" ];
+	"NULL" -> "base:Aircraft" [ label = "rdf:first" ];
+	"NULL" -> "base:Author" [ label = "owl:onClass" ];
+	"NULL" -> "-1915747d:18f2a622422:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "-1915747d:18f2a622422:-7ff6" [ label = "rdf:rest" ];
+	"NULL" -> "-1915747d:18f2a622422:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "base:Places" [ label = "owl:onClass" ];
+	"NULL" -> "base:TypeOfTraveller" [ label = "rdf:first" ];
+	"NULL" -> "base:hasAuthor" [ label = "owl:onProperty" ];
+	"base:Flight" -> "-1915747d:18f2a622422:-7ffc" [ label = "owl:disjointUnionOf" ];
+	"base:Review" -> "-1915747d:18f2a622422:-7ffa" [ label = "owl:disjointUnionOf" ];
+	"base:Flight0" -> "base:Faro" [ label = "base:hasOrigin" ];
+	"base:Flight0" -> "base:Luton" [ label = "base:hasDestination" ];
+	"base:review0" -> "base:EconomyClass" [ label = "base:hasSeatType" ];
+	"base:review0" -> "base:Flight0" [ label = "base:hasFlight" ];
+	"base:review0" -> "base:UnitedKingdom" [ label = "base:hasPassengerCountry" ];
+	"base:review0" -> "base:David" [ label = "base:hasAuthor" ];
+	"base:Review" -> "xsd:string" [ label = "base:hasTitle" ];
+	"base:Review" -> "base:SeatType" [ label = "base:hasSeatType" ];
+	"base:Review" -> "xsd:positiveInteger" [ label = "base:seatComfortRating" ];
+	"base:Review" -> "base:Author" [ label = "base:hasAuthor" ];
+	"base:Review" -> "xsd:string" [ label = "base:hasBody" ];
+	"base:Review" -> "base:Country" [ label = "base:hasPassengerCountry" ];
+	"base:Review" -> "xsd:positiveInteger" [ label = "base:valueForMoney" ];
+	"base:Flight" -> "base:Aircraft" [ label = "base:hasAircraft" ];
+	"base:Review" -> "xsd:boolean" [ label = "base:verified" ];
+	"base:Flight" -> "base:Places" [ label = "base:hasOrigin" ];
+	"base:Flight" -> "base:Places" [ label = "base:hasDestination" ];
+	"base:Review" -> "base:TypeOfTraveller" [ label = "base:hasTypeOfTraveller" ];
+	"base:Review" -> "xsd:positiveInteger" [ label = "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#wifi&ConnectivityRating" ];
+	"base:Review" -> "xsd:boolean" [ label = "base:recommended" ];
+	"base:Review" -> "xsd:dateTime" [ label = "base:hasDatePublished" ];
+	"base:Review" -> "xsd:positiveInteger" [ label = "base:ratingValue" ];
+	"base:Review" -> "base:Flight" [ label = "base:hasFlight" ];
+	"base:Flight" -> "xsd:dateTime" [ label = "base:hasDateFlown" ];
+	"base:Review" -> "xsd:positiveInteger" [ label = "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#food&BeveragesRating" ];
+	"base:Review" -> "xsd:positiveInteger" [ label = "base:inflightEntertainmentRating" ];
+	"base:Review" -> "xsd:positiveInteger" [ label = "base:cabinStaffServiceRating" ];
+	"base:Review" -> "xsd:positiveInteger" [ label = "base:groundServiceRating" ];
+
+}
