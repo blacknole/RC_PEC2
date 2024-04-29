@@ -1,0 +1,1151 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8" ],
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:disjointUnionOf"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:disjointUnionOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#RecommendedReview",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecommendedReview",
+      "undefined" : "RecommendedReview"
+    },
+    "comment" : {
+      "undefined" : "A review that has recommended the experience"
+    },
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotVerifiedReview",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NotVerifiedReview",
+      "undefined" : "NotVerifiedReview"
+    },
+    "comment" : {
+      "undefined" : "A refiew that has not been verified"
+    },
+    "id" : "12",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Recommended",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recommended",
+      "undefined" : "Recommended"
+    },
+    "subClasses" : [ "6", "14" ],
+    "comment" : {
+      "undefined" : "Categorize if a Review recommends the experience or not"
+    },
+    "id" : "7",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "disjointUnion" : [ "16", "9" ],
+    "label" : {
+      "IRI-based" : "Flight",
+      "undefined" : "Flight"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Flight0",
+      "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+      "comment" : {
+        "undefined" : "The Flight of David"
+      },
+      "labels" : {
+        "IRI-based" : "Flight0",
+        "undefined" : "Flight0"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The flight with its Origin, Destination and date"
+    },
+    "attributes" : [ "disjointUnion" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#SeatType",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeatType",
+      "undefined" : "SeatType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#EconomyClass",
+      "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+      "comment" : {
+        "undefined" : "The seat type EconomyClass"
+      },
+      "labels" : {
+        "IRI-based" : "EconomyClass",
+        "undefined" : "EconomyClass"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The type of seat. Ex.: Business, economy..."
+    },
+    "id" : "17"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowRatingReview",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LowRatingReview",
+      "undefined" : "LowRatingReview"
+    },
+    "comment" : {
+      "undefined" : "A Review with 4 or less rating"
+    },
+    "id" : "31",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighValueForMoney",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HighValueForMoney",
+      "undefined" : "HighValueForMoney"
+    },
+    "comment" : {
+      "undefined" : "The rating of the value for money of the flight overall is 4 or 5"
+    },
+    "id" : "32",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NegativeReview",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NegativeReview",
+      "undefined" : "Negativereview"
+    },
+    "comment" : {
+      "undefined" : "A review that in general is negative"
+    },
+    "id" : "37",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ValueForMoney",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ValueForMoney",
+      "undefined" : "ValueForMoney"
+    },
+    "subClasses" : [ "44", "32" ],
+    "comment" : {
+      "undefined" : "Categorize if a Review is has a High or Low value for money"
+    },
+    "id" : "21",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#PositiveReview",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PositiveReview",
+      "undefined" : "PositiveReview"
+    },
+    "comment" : {
+      "undefined" : "A review that in general is positive"
+    },
+    "id" : "45",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#VerifiedReview",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VerifiedReview",
+      "undefined" : "VerifiedReview"
+    },
+    "comment" : {
+      "undefined" : "A refiew that has been verified"
+    },
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#City",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/ontology/city",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "City",
+      "undefined" : "City"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Faro",
+      "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+      "comment" : {
+        "undefined" : "A city"
+      },
+      "labels" : {
+        "IRI-based" : "Faro",
+        "undefined" : "Faro"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Luton",
+      "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+      "comment" : {
+        "undefined" : "A city"
+      },
+      "labels" : {
+        "IRI-based" : "Luton",
+        "undefined" : "Luton"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The city of origin or destination"
+    },
+    "id" : "16",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#OverallResult",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OverallResult",
+      "undefined" : "OverallResult"
+    },
+    "subClasses" : [ "45", "37" ],
+    "comment" : {
+      "undefined" : "If in general a Review is positive or negative"
+    },
+    "id" : "29",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#HighRatingReview",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HighRatingReview",
+      "undefined" : "HighRatingReview"
+    },
+    "comment" : {
+      "undefined" : "A Review with 5 or more Rating"
+    },
+    "id" : "34",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#NotRecommendedReview",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NotRecommendedReview",
+      "undefined" : "NotRecommendedReview"
+    },
+    "comment" : {
+      "undefined" : "A review that has not recommended the experience"
+    },
+    "id" : "14",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Country",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/ontology/country",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Country",
+      "undefined" : "Country"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#UnitedKingdom",
+      "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+      "comment" : {
+        "undefined" : "a country"
+      },
+      "labels" : {
+        "IRI-based" : "UnitedKingdom",
+        "undefined" : "UnitedKingdom"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A country on the planet, probably a passenger Country"
+    },
+    "id" : "25",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Rating",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rating",
+      "undefined" : "Rating"
+    },
+    "subClasses" : [ "34", "31" ],
+    "comment" : {
+      "undefined" : "Categorize if a Review is High or Low rating"
+    },
+    "id" : "23",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Author",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Author",
+      "undefined" : "Author"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#David",
+      "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+      "comment" : {
+        "undefined" : "A passenger that writes the review0"
+      },
+      "labels" : {
+        "IRI-based" : "David",
+        "undefined" : "David"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Author of the review"
+    },
+    "id" : "19"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "positiveInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "positiveInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "positiveInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#TypeOfTraveller",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TypeOfTraveller",
+      "undefined" : "TypeOfTraveller"
+    },
+    "comment" : {
+      "undefined" : "Type of traveller. Ex.: Business, solo, family..."
+    },
+    "id" : "62"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Review",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "disjointUnion" : [ "25", "1", "17", "19", "62" ],
+    "label" : {
+      "IRI-based" : "Review",
+      "undefined" : "Review"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#review0",
+      "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+      "comment" : {
+        "undefined" : "the review David write"
+      },
+      "labels" : {
+        "IRI-based" : "review0",
+        "undefined" : "review0"
+      }
+    } ],
+    "subClasses" : [ "5", "7", "23", "21", "29" ],
+    "comment" : {
+      "undefined" : "The overall reviews"
+    },
+    "attributes" : [ "disjointUnion" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "positiveInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "positiveInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Places",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Places",
+      "undefined" : "Places"
+    },
+    "subClasses" : [ "25", "16" ],
+    "comment" : {
+      "undefined" : "The diferent types of places like Country or City and if there are a Destination or Origin for a flight"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "positiveInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "positiveInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "67",
+    "label" : {
+      "IRI-based" : "positiveInteger"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Verified",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Verified",
+      "undefined" : "Verified"
+    },
+    "subClasses" : [ "12", "4" ],
+    "comment" : {
+      "undefined" : "Categorize if a Review is Verified"
+    },
+    "id" : "5",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#LowValueforMoney",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LowValueforMoney",
+      "undefined" : "LowValueforMoney"
+    },
+    "comment" : {
+      "undefined" : "The rating of the value for money of the flight overall is 3 or less"
+    },
+    "id" : "44",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#Aircraft",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/ontology/Aircraft",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Aircraft",
+      "undefined" : "Aircraft"
+    },
+    "comment" : {
+      "undefined" : "Type or model of the aircraft"
+    },
+    "id" : "9"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasOrigin",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasOrigin",
+      "undefined" : "hasOrigin"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Connects the Flight to its Origin"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAircraft",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasAircraft",
+      "undefined" : "hasAircraft"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Connects the flight to its aircaft"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasFlight",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasFlight",
+      "undefined" : "hasFlight"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Connects the Review to its Flight"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "10"
+  }, {
+    "range" : "5",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "range" : "2",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasAuthor",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasAuthor",
+      "undefined" : "hasAuthor"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Connects the Review to its Author"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "18"
+  }, {
+    "range" : "11",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "11",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "2",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTitle",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasTitle",
+      "undefined" : "hasTittle"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "The Title of the comment"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "range" : "11",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "23",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "23",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#wifi&ConnectivityRating",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "wifi&ConnectivityRating",
+      "undefined" : "wifi&ConnectivityRating"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "The Wifi & Connectivity Rating"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "35"
+  }, {
+    "range" : "11",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "11",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDatePublished",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasDatePublished",
+      "undefined" : "hasDatePublished"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "The date of publication of the Review"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#food&BeveragesRating",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "food&BeveragesRating",
+      "undefined" : "food&BeveragesRating"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "the Food & Beverages Rating"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#valueForMoney",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "valueForMoney",
+      "undefined" : "valueForMoney"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "The Value For Money"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "46"
+  }, {
+    "range" : "29",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "21",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#inflightEntertainmentRating",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "inflightEntertainmentRating",
+      "undefined" : "inflightEntertainmentRating"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "the Inflight Entertainment Rating"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "50"
+  }, {
+    "range" : "29",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "21",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "7",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#seatComfortRating",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "seatComfortRating",
+      "undefined" : "seatComfortRating"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "The seatComfort Rating"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasPassengerCountry",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasPassengerCountry",
+      "undefined" : "hasPassengerCountry"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Connects the Review to its Passenger Country"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDestination",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasDestination",
+      "undefined" : "hasDestination"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Connects the flight to its Destination"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasTypeOfTraveller",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "hasTypeOfTraveller",
+      "undefined" : "hasTypeOfTraveller"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Connects the flight to its Type Of Traveller"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasBody",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "hasBody",
+      "undefined" : "hasBody"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "The body of the comment"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasDateFlown",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "hasDateFlown",
+      "undefined" : "hasDateFlown"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "the Date of the Flight"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#groundServiceRating",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "groundServiceRating",
+      "undefined" : "groundServiceRating"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "the Ground Service Rating"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#ratingValue",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "ratingValue",
+      "undefined" : "ratingValue"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "The value of the rating"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#cabinStaffServiceRating",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "cabinStaffServiceRating",
+      "undefined" : "cabinStaffServiceRating"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "the Cabin Staff Service Rating"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#verified",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "verified",
+      "undefined" : "verified"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Whether a Review is verified or not"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#recommended",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "recommended",
+      "undefined" : "recommended"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Whether or not they recommended the flight overall"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8#hasSeatType",
+    "baseIri" : "http://www.semanticweb.org/davie/ontologies/2024/3/untitled-ontology-8",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasSeatType",
+      "undefined" : "hasSeatType"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Connects the Review to its Seat Type"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "76"
+  } ]
+}
